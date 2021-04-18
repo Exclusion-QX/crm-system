@@ -1,0 +1,87 @@
+Client:
+	id: идентификатор клиента
+	name: имя контакта
+	phone: номер телефона
+	email: адрес эл.почты
+	update_at: недавние посещения
+	date_first_contact: дата первого контакта
+	date_first_sale: дата первой продажи
+	date_last_talk: дата последнего разговора
+	name_social_network: название соц. сети
+	address_soc_net: адресс соц. сети
+	\ доп. информация о клиенте 
+
+
+User:
+	id:
+	login:
+	password:
+	users_group_id:
+	company_id:
+
+User_group:
+	id:
+	name:
+
+Company:
+	id:
+	name:
+
+Task:
+	id:
+	order_id:
+	company_id:
+	user_id:
+	name:
+	definition:
+	comment:
+	date:
+	duration:
+	completed:
+
+Order:
+	id:
+	product_id:
+	client_id:
+	company_id:
+	date_create:
+	date_completed:
+	price: сумма
+	quantity: количество товара
+	stage: этап продажи (отправлено, получено, упаковывается и т.д.)
+	trade_status:
+
+Product:
+	id:
+	company_id:
+	name:
+	price:
+
+Warhouse:
+	id:
+	product_id:
+	quantity:
+
+message:
+	id:
+	user_id:
+	client_id:
+	report:
+
+
+Заказы клиента
+
+
+
+Сущности системы:
+
+Клиент - клиент покупающий товар
+Пользователь(сотрудник) - пользователь системы
+Товар - товар из магазина
+Накладная\договор - заключение о поставке\продаже
+Склад - склад где хранятся товары
+Задачи - задача для сотрудника
+Компания - организация в которой работает клиент
+
+
+Функции системы:
